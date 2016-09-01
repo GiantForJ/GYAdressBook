@@ -1,0 +1,879 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7F8D2591D755751009EAB59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8D2581D755751009EAB59 /* AppDelegate.swift */; };
+		B7F8D25B1D755751009EAB59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8D25A1D755751009EAB59 /* ViewController.swift */; };
+		B7F8D25E1D755751009EAB59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F8D25C1D755751009EAB59 /* Main.storyboard */; };
+		B7F8D2601D755751009EAB59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F8D25F1D755751009EAB59 /* Assets.xcassets */; };
+		B7F8D2631D755751009EAB59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F8D2611D755751009EAB59 /* LaunchScreen.storyboard */; };
+		B7F8D26E1D755751009EAB59 /* GYAdressBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8D26D1D755751009EAB59 /* GYAdressBookTests.swift */; };
+		B7F8D2791D755752009EAB59 /* GYAdressBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8D2781D755752009EAB59 /* GYAdressBookUITests.swift */; };
+		B7F8D28B1D7567B8009EAB59 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F8D28A1D7567B8009EAB59 /* AddressBook.framework */; };
+		B7F8D28D1D7567C4009EAB59 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F8D28C1D7567C4009EAB59 /* AddressBookUI.framework */; };
+		B7F8D28F1D757817009EAB59 /* SwiftContactTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8D28E1D757817009EAB59 /* SwiftContactTool.swift */; };
+		B7F8D2A81D7681D4009EAB59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8D2A71D7681D4009EAB59 /* AppDelegate.swift */; };
+		B7F8D2AA1D7681D4009EAB59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8D2A91D7681D4009EAB59 /* ViewController.swift */; };
+		B7F8D2AD1D7681D4009EAB59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F8D2AB1D7681D4009EAB59 /* Main.storyboard */; };
+		B7F8D2AF1D7681D4009EAB59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F8D2AE1D7681D4009EAB59 /* Assets.xcassets */; };
+		B7F8D2B21D7681D4009EAB59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F8D2B01D7681D4009EAB59 /* LaunchScreen.storyboard */; };
+		B7F8D2BD1D7681D4009EAB59 /* GYContactsCustomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8D2BC1D7681D4009EAB59 /* GYContactsCustomUITests.swift */; };
+		B7F8D2C81D7681D4009EAB59 /* GYContactsCustomUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8D2C71D7681D4009EAB59 /* GYContactsCustomUIUITests.swift */; };
+		B7F8D4571D76C7EC009EAB59 /* GYConactBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8D4561D76C7EC009EAB59 /* GYConactBook.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7F8D26A1D755751009EAB59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7F8D24D1D755751009EAB59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7F8D2541D755751009EAB59;
+			remoteInfo = GYAdressBook;
+		};
+		B7F8D2751D755751009EAB59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7F8D24D1D755751009EAB59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7F8D2541D755751009EAB59;
+			remoteInfo = GYAdressBook;
+		};
+		B7F8D2B91D7681D4009EAB59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7F8D24D1D755751009EAB59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7F8D2A41D7681D4009EAB59;
+			remoteInfo = GYContactsCustomUI;
+		};
+		B7F8D2C41D7681D4009EAB59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7F8D24D1D755751009EAB59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7F8D2A41D7681D4009EAB59;
+			remoteInfo = GYContactsCustomUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B7F8D2551D755751009EAB59 /* GYAdressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYAdressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F8D2581D755751009EAB59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7F8D25A1D755751009EAB59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7F8D25D1D755751009EAB59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7F8D25F1D755751009EAB59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7F8D2621D755751009EAB59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7F8D2641D755751009EAB59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F8D2691D755751009EAB59 /* GYAdressBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYAdressBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F8D26D1D755751009EAB59 /* GYAdressBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYAdressBookTests.swift; sourceTree = "<group>"; };
+		B7F8D26F1D755751009EAB59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F8D2741D755751009EAB59 /* GYAdressBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYAdressBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F8D2781D755752009EAB59 /* GYAdressBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYAdressBookUITests.swift; sourceTree = "<group>"; };
+		B7F8D27A1D755752009EAB59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F8D28A1D7567B8009EAB59 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		B7F8D28C1D7567C4009EAB59 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		B7F8D28E1D757817009EAB59 /* SwiftContactTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftContactTool.swift; sourceTree = "<group>"; };
+		B7F8D2A51D7681D4009EAB59 /* GYContactsCustomUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYContactsCustomUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F8D2A71D7681D4009EAB59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7F8D2A91D7681D4009EAB59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7F8D2AC1D7681D4009EAB59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7F8D2AE1D7681D4009EAB59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7F8D2B11D7681D4009EAB59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7F8D2B31D7681D4009EAB59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F8D2B81D7681D4009EAB59 /* GYContactsCustomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYContactsCustomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F8D2BC1D7681D4009EAB59 /* GYContactsCustomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYContactsCustomUITests.swift; sourceTree = "<group>"; };
+		B7F8D2BE1D7681D4009EAB59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F8D2C31D7681D4009EAB59 /* GYContactsCustomUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYContactsCustomUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F8D2C71D7681D4009EAB59 /* GYContactsCustomUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYContactsCustomUIUITests.swift; sourceTree = "<group>"; };
+		B7F8D2C91D7681D4009EAB59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F8D4561D76C7EC009EAB59 /* GYConactBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYConactBook.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7F8D2521D755751009EAB59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F8D28D1D7567C4009EAB59 /* AddressBookUI.framework in Frameworks */,
+				B7F8D28B1D7567B8009EAB59 /* AddressBook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F8D2661D755751009EAB59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F8D2711D755751009EAB59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F8D2A21D7681D4009EAB59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F8D2B51D7681D4009EAB59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F8D2C01D7681D4009EAB59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7F8D24C1D755751009EAB59 = {
+			isa = PBXGroup;
+			children = (
+				B7F8D2A61D7681D4009EAB59 /* GYContactsCustomUI */,
+				B7F8D2BB1D7681D4009EAB59 /* GYContactsCustomUITests */,
+				B7F8D2C61D7681D4009EAB59 /* GYContactsCustomUIUITests */,
+				B7F8D2891D7567B2009EAB59 /* Frameworks */,
+				B7F8D2571D755751009EAB59 /* GYAdressBook */,
+				B7F8D26C1D755751009EAB59 /* GYAdressBookTests */,
+				B7F8D2771D755752009EAB59 /* GYAdressBookUITests */,
+				B7F8D2561D755751009EAB59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7F8D2561D755751009EAB59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7F8D2551D755751009EAB59 /* GYAdressBook.app */,
+				B7F8D2691D755751009EAB59 /* GYAdressBookTests.xctest */,
+				B7F8D2741D755751009EAB59 /* GYAdressBookUITests.xctest */,
+				B7F8D2A51D7681D4009EAB59 /* GYContactsCustomUI.app */,
+				B7F8D2B81D7681D4009EAB59 /* GYContactsCustomUITests.xctest */,
+				B7F8D2C31D7681D4009EAB59 /* GYContactsCustomUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7F8D2571D755751009EAB59 /* GYAdressBook */ = {
+			isa = PBXGroup;
+			children = (
+				B7F8D2861D755E5C009EAB59 /* GYAddressBook */,
+				B7F8D2581D755751009EAB59 /* AppDelegate.swift */,
+				B7F8D25A1D755751009EAB59 /* ViewController.swift */,
+				B7F8D25C1D755751009EAB59 /* Main.storyboard */,
+				B7F8D25F1D755751009EAB59 /* Assets.xcassets */,
+				B7F8D2611D755751009EAB59 /* LaunchScreen.storyboard */,
+				B7F8D2641D755751009EAB59 /* Info.plist */,
+			);
+			path = GYAdressBook;
+			sourceTree = "<group>";
+		};
+		B7F8D26C1D755751009EAB59 /* GYAdressBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7F8D26D1D755751009EAB59 /* GYAdressBookTests.swift */,
+				B7F8D26F1D755751009EAB59 /* Info.plist */,
+			);
+			path = GYAdressBookTests;
+			sourceTree = "<group>";
+		};
+		B7F8D2771D755752009EAB59 /* GYAdressBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B7F8D2781D755752009EAB59 /* GYAdressBookUITests.swift */,
+				B7F8D27A1D755752009EAB59 /* Info.plist */,
+			);
+			path = GYAdressBookUITests;
+			sourceTree = "<group>";
+		};
+		B7F8D2861D755E5C009EAB59 /* GYAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				B7F8D28E1D757817009EAB59 /* SwiftContactTool.swift */,
+			);
+			path = GYAddressBook;
+			sourceTree = "<group>";
+		};
+		B7F8D2891D7567B2009EAB59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7F8D28C1D7567C4009EAB59 /* AddressBookUI.framework */,
+				B7F8D28A1D7567B8009EAB59 /* AddressBook.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7F8D2A61D7681D4009EAB59 /* GYContactsCustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				B7F8D2A71D7681D4009EAB59 /* AppDelegate.swift */,
+				B7F8D2A91D7681D4009EAB59 /* ViewController.swift */,
+				B7F8D4561D76C7EC009EAB59 /* GYConactBook.swift */,
+				B7F8D2AB1D7681D4009EAB59 /* Main.storyboard */,
+				B7F8D2AE1D7681D4009EAB59 /* Assets.xcassets */,
+				B7F8D2B01D7681D4009EAB59 /* LaunchScreen.storyboard */,
+				B7F8D2B31D7681D4009EAB59 /* Info.plist */,
+			);
+			path = GYContactsCustomUI;
+			sourceTree = "<group>";
+		};
+		B7F8D2BB1D7681D4009EAB59 /* GYContactsCustomUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B7F8D2BC1D7681D4009EAB59 /* GYContactsCustomUITests.swift */,
+				B7F8D2BE1D7681D4009EAB59 /* Info.plist */,
+			);
+			path = GYContactsCustomUITests;
+			sourceTree = "<group>";
+		};
+		B7F8D2C61D7681D4009EAB59 /* GYContactsCustomUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B7F8D2C71D7681D4009EAB59 /* GYContactsCustomUIUITests.swift */,
+				B7F8D2C91D7681D4009EAB59 /* Info.plist */,
+			);
+			path = GYContactsCustomUIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7F8D2541D755751009EAB59 /* GYAdressBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7F8D27D1D755752009EAB59 /* Build configuration list for PBXNativeTarget "GYAdressBook" */;
+			buildPhases = (
+				B7F8D2511D755751009EAB59 /* Sources */,
+				B7F8D2521D755751009EAB59 /* Frameworks */,
+				B7F8D2531D755751009EAB59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GYAdressBook;
+			productName = GYAdressBook;
+			productReference = B7F8D2551D755751009EAB59 /* GYAdressBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7F8D2681D755751009EAB59 /* GYAdressBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7F8D2801D755752009EAB59 /* Build configuration list for PBXNativeTarget "GYAdressBookTests" */;
+			buildPhases = (
+				B7F8D2651D755751009EAB59 /* Sources */,
+				B7F8D2661D755751009EAB59 /* Frameworks */,
+				B7F8D2671D755751009EAB59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7F8D26B1D755751009EAB59 /* PBXTargetDependency */,
+			);
+			name = GYAdressBookTests;
+			productName = GYAdressBookTests;
+			productReference = B7F8D2691D755751009EAB59 /* GYAdressBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B7F8D2731D755751009EAB59 /* GYAdressBookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7F8D2831D755752009EAB59 /* Build configuration list for PBXNativeTarget "GYAdressBookUITests" */;
+			buildPhases = (
+				B7F8D2701D755751009EAB59 /* Sources */,
+				B7F8D2711D755751009EAB59 /* Frameworks */,
+				B7F8D2721D755751009EAB59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7F8D2761D755751009EAB59 /* PBXTargetDependency */,
+			);
+			name = GYAdressBookUITests;
+			productName = GYAdressBookUITests;
+			productReference = B7F8D2741D755751009EAB59 /* GYAdressBookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B7F8D2A41D7681D4009EAB59 /* GYContactsCustomUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7F8D2CA1D7681D4009EAB59 /* Build configuration list for PBXNativeTarget "GYContactsCustomUI" */;
+			buildPhases = (
+				B7F8D2A11D7681D4009EAB59 /* Sources */,
+				B7F8D2A21D7681D4009EAB59 /* Frameworks */,
+				B7F8D2A31D7681D4009EAB59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GYContactsCustomUI;
+			productName = GYContactsCustomUI;
+			productReference = B7F8D2A51D7681D4009EAB59 /* GYContactsCustomUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7F8D2B71D7681D4009EAB59 /* GYContactsCustomUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7F8D2CD1D7681D4009EAB59 /* Build configuration list for PBXNativeTarget "GYContactsCustomUITests" */;
+			buildPhases = (
+				B7F8D2B41D7681D4009EAB59 /* Sources */,
+				B7F8D2B51D7681D4009EAB59 /* Frameworks */,
+				B7F8D2B61D7681D4009EAB59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7F8D2BA1D7681D4009EAB59 /* PBXTargetDependency */,
+			);
+			name = GYContactsCustomUITests;
+			productName = GYContactsCustomUITests;
+			productReference = B7F8D2B81D7681D4009EAB59 /* GYContactsCustomUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B7F8D2C21D7681D4009EAB59 /* GYContactsCustomUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7F8D2D01D7681D4009EAB59 /* Build configuration list for PBXNativeTarget "GYContactsCustomUIUITests" */;
+			buildPhases = (
+				B7F8D2BF1D7681D4009EAB59 /* Sources */,
+				B7F8D2C01D7681D4009EAB59 /* Frameworks */,
+				B7F8D2C11D7681D4009EAB59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7F8D2C51D7681D4009EAB59 /* PBXTargetDependency */,
+			);
+			name = GYContactsCustomUIUITests;
+			productName = GYContactsCustomUIUITests;
+			productReference = B7F8D2C31D7681D4009EAB59 /* GYContactsCustomUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7F8D24D1D755751009EAB59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Giant;
+				TargetAttributes = {
+					B7F8D2541D755751009EAB59 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = UZZG6NM74T;
+					};
+					B7F8D2681D755751009EAB59 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B7F8D2541D755751009EAB59;
+					};
+					B7F8D2731D755751009EAB59 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B7F8D2541D755751009EAB59;
+					};
+					B7F8D2A41D7681D4009EAB59 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = UZZG6NM74T;
+					};
+					B7F8D2B71D7681D4009EAB59 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B7F8D2A41D7681D4009EAB59;
+					};
+					B7F8D2C21D7681D4009EAB59 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B7F8D2A41D7681D4009EAB59;
+					};
+				};
+			};
+			buildConfigurationList = B7F8D2501D755751009EAB59 /* Build configuration list for PBXProject "GYAdressBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7F8D24C1D755751009EAB59;
+			productRefGroup = B7F8D2561D755751009EAB59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7F8D2541D755751009EAB59 /* GYAdressBook */,
+				B7F8D2681D755751009EAB59 /* GYAdressBookTests */,
+				B7F8D2731D755751009EAB59 /* GYAdressBookUITests */,
+				B7F8D2A41D7681D4009EAB59 /* GYContactsCustomUI */,
+				B7F8D2B71D7681D4009EAB59 /* GYContactsCustomUITests */,
+				B7F8D2C21D7681D4009EAB59 /* GYContactsCustomUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7F8D2531D755751009EAB59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F8D2631D755751009EAB59 /* LaunchScreen.storyboard in Resources */,
+				B7F8D2601D755751009EAB59 /* Assets.xcassets in Resources */,
+				B7F8D25E1D755751009EAB59 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F8D2671D755751009EAB59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F8D2721D755751009EAB59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F8D2A31D7681D4009EAB59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F8D2B21D7681D4009EAB59 /* LaunchScreen.storyboard in Resources */,
+				B7F8D2AF1D7681D4009EAB59 /* Assets.xcassets in Resources */,
+				B7F8D2AD1D7681D4009EAB59 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F8D2B61D7681D4009EAB59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F8D2C11D7681D4009EAB59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7F8D2511D755751009EAB59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F8D25B1D755751009EAB59 /* ViewController.swift in Sources */,
+				B7F8D2591D755751009EAB59 /* AppDelegate.swift in Sources */,
+				B7F8D28F1D757817009EAB59 /* SwiftContactTool.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F8D2651D755751009EAB59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F8D26E1D755751009EAB59 /* GYAdressBookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F8D2701D755751009EAB59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F8D2791D755752009EAB59 /* GYAdressBookUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F8D2A11D7681D4009EAB59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F8D2AA1D7681D4009EAB59 /* ViewController.swift in Sources */,
+				B7F8D2A81D7681D4009EAB59 /* AppDelegate.swift in Sources */,
+				B7F8D4571D76C7EC009EAB59 /* GYConactBook.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F8D2B41D7681D4009EAB59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F8D2BD1D7681D4009EAB59 /* GYContactsCustomUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F8D2BF1D7681D4009EAB59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F8D2C81D7681D4009EAB59 /* GYContactsCustomUIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7F8D26B1D755751009EAB59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7F8D2541D755751009EAB59 /* GYAdressBook */;
+			targetProxy = B7F8D26A1D755751009EAB59 /* PBXContainerItemProxy */;
+		};
+		B7F8D2761D755751009EAB59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7F8D2541D755751009EAB59 /* GYAdressBook */;
+			targetProxy = B7F8D2751D755751009EAB59 /* PBXContainerItemProxy */;
+		};
+		B7F8D2BA1D7681D4009EAB59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7F8D2A41D7681D4009EAB59 /* GYContactsCustomUI */;
+			targetProxy = B7F8D2B91D7681D4009EAB59 /* PBXContainerItemProxy */;
+		};
+		B7F8D2C51D7681D4009EAB59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7F8D2A41D7681D4009EAB59 /* GYContactsCustomUI */;
+			targetProxy = B7F8D2C41D7681D4009EAB59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B7F8D25C1D755751009EAB59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7F8D25D1D755751009EAB59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7F8D2611D755751009EAB59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7F8D2621D755751009EAB59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B7F8D2AB1D7681D4009EAB59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7F8D2AC1D7681D4009EAB59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7F8D2B01D7681D4009EAB59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7F8D2B11D7681D4009EAB59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7F8D27B1D755752009EAB59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7F8D27C1D755752009EAB59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7F8D27E1D755752009EAB59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GYAdressBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JadeFor.GYAdressBookJade;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B7F8D27F1D755752009EAB59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GYAdressBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JadeFor.GYAdressBookJade;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B7F8D2811D755752009EAB59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GYAdressBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JadeFor.GYAdressBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GYAdressBook.app/GYAdressBook";
+			};
+			name = Debug;
+		};
+		B7F8D2821D755752009EAB59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GYAdressBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JadeFor.GYAdressBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GYAdressBook.app/GYAdressBook";
+			};
+			name = Release;
+		};
+		B7F8D2841D755752009EAB59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GYAdressBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JadeFor.GYAdressBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GYAdressBook;
+			};
+			name = Debug;
+		};
+		B7F8D2851D755752009EAB59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GYAdressBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JadeFor.GYAdressBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GYAdressBook;
+			};
+			name = Release;
+		};
+		B7F8D2CB1D7681D4009EAB59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GYContactsCustomUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JadeFor.GYContactsCustomUI2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B7F8D2CC1D7681D4009EAB59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GYContactsCustomUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JadeFor.GYContactsCustomUI2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B7F8D2CE1D7681D4009EAB59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GYContactsCustomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JadeFor.GYContactsCustomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GYContactsCustomUI.app/GYContactsCustomUI";
+			};
+			name = Debug;
+		};
+		B7F8D2CF1D7681D4009EAB59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GYContactsCustomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JadeFor.GYContactsCustomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GYContactsCustomUI.app/GYContactsCustomUI";
+			};
+			name = Release;
+		};
+		B7F8D2D11D7681D4009EAB59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GYContactsCustomUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JadeFor.GYContactsCustomUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GYContactsCustomUI;
+			};
+			name = Debug;
+		};
+		B7F8D2D21D7681D4009EAB59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GYContactsCustomUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JadeFor.GYContactsCustomUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GYContactsCustomUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7F8D2501D755751009EAB59 /* Build configuration list for PBXProject "GYAdressBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F8D27B1D755752009EAB59 /* Debug */,
+				B7F8D27C1D755752009EAB59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7F8D27D1D755752009EAB59 /* Build configuration list for PBXNativeTarget "GYAdressBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F8D27E1D755752009EAB59 /* Debug */,
+				B7F8D27F1D755752009EAB59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7F8D2801D755752009EAB59 /* Build configuration list for PBXNativeTarget "GYAdressBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F8D2811D755752009EAB59 /* Debug */,
+				B7F8D2821D755752009EAB59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7F8D2831D755752009EAB59 /* Build configuration list for PBXNativeTarget "GYAdressBookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F8D2841D755752009EAB59 /* Debug */,
+				B7F8D2851D755752009EAB59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7F8D2CA1D7681D4009EAB59 /* Build configuration list for PBXNativeTarget "GYContactsCustomUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F8D2CB1D7681D4009EAB59 /* Debug */,
+				B7F8D2CC1D7681D4009EAB59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7F8D2CD1D7681D4009EAB59 /* Build configuration list for PBXNativeTarget "GYContactsCustomUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F8D2CE1D7681D4009EAB59 /* Debug */,
+				B7F8D2CF1D7681D4009EAB59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7F8D2D01D7681D4009EAB59 /* Build configuration list for PBXNativeTarget "GYContactsCustomUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F8D2D11D7681D4009EAB59 /* Debug */,
+				B7F8D2D21D7681D4009EAB59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7F8D24D1D755751009EAB59 /* Project object */;
+}
