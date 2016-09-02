@@ -25,6 +25,7 @@
 		B7F8D2BD1D7681D4009EAB59 /* GYContactsCustomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8D2BC1D7681D4009EAB59 /* GYContactsCustomUITests.swift */; };
 		B7F8D2C81D7681D4009EAB59 /* GYContactsCustomUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8D2C71D7681D4009EAB59 /* GYContactsCustomUIUITests.swift */; };
 		B7F8D4571D76C7EC009EAB59 /* GYConactBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8D4561D76C7EC009EAB59 /* GYConactBook.swift */; };
+		B7F8D4591D7958B3009EAB59 /* GYTConactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8D4581D7958B3009EAB59 /* GYTConactCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		B7F8D2C71D7681D4009EAB59 /* GYContactsCustomUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYContactsCustomUIUITests.swift; sourceTree = "<group>"; };
 		B7F8D2C91D7681D4009EAB59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7F8D4561D76C7EC009EAB59 /* GYConactBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYConactBook.swift; sourceTree = "<group>"; };
+		B7F8D4581D7958B3009EAB59 /* GYTConactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYTConactCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +223,7 @@
 				B7F8D2A71D7681D4009EAB59 /* AppDelegate.swift */,
 				B7F8D2A91D7681D4009EAB59 /* ViewController.swift */,
 				B7F8D4561D76C7EC009EAB59 /* GYConactBook.swift */,
+				B7F8D4581D7958B3009EAB59 /* GYTConactCell.swift */,
 				B7F8D2AB1D7681D4009EAB59 /* Main.storyboard */,
 				B7F8D2AE1D7681D4009EAB59 /* Assets.xcassets */,
 				B7F8D2B01D7681D4009EAB59 /* LaunchScreen.storyboard */,
@@ -499,6 +502,7 @@
 			files = (
 				B7F8D2AA1D7681D4009EAB59 /* ViewController.swift in Sources */,
 				B7F8D2A81D7681D4009EAB59 /* AppDelegate.swift in Sources */,
+				B7F8D4591D7958B3009EAB59 /* GYTConactCell.swift in Sources */,
 				B7F8D4571D76C7EC009EAB59 /* GYConactBook.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

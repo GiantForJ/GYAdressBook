@@ -89,7 +89,7 @@ class GYConactBook: NSObject {
         
         let allPeople = ABAddressBookCopyArrayOfAllPeople(addressBooks).takeRetainedValue()
         
-        let nPeople = ABAddressBookGetPersonCount(addressBooks) 
+        //        let nPeople = ABAddressBookGetPersonCount(addressBooks) 
         
         for person: ABRecordRef in allPeople as NSArray {
             
@@ -97,14 +97,14 @@ class GYConactBook: NSObject {
             
             //转型错误 Could not cast value of type 'Swift.UnsafePointer<()>' (0x10274c028) to 'Swift.AnyObject' (0x10273c018).
             //http://swifter.tips/unsafe/
-            //            let person = CFArrayGetValueAtIndex(allPeople, i) as? ABRecordRef
+            // let person = CFArrayGetValueAtIndex(allPeople, i) as? ABRecordRef
             //TODO:联系人名字
             if let abName = ABRecordCopyValue(person, kABPersonFirstNameProperty) {
                 model.name1 = abName.takeRetainedValue() as? String ?? ""
             }
             
-            if let abLastName = ABRecordCopyValue(person, kABPersonLastNameProperty){
-            }
+            //            if let abLastName = ABRecordCopyValue(person, kABPersonLastNameProperty){
+            //            }
             
             if let abFullName = ABRecordCopyCompositeName(person) {
                 model.name1 = abFullName.takeRetainedValue() as String ?? ""
@@ -118,9 +118,9 @@ class GYConactBook: NSObject {
                     
                     if let value = ABMultiValueCopyValueAtIndex(phoneValues
                         , i) {
-                     let phone = value.takeRetainedValue() as! String
+                        let phone = value.takeRetainedValue() as! String
                         
-                       
+                        
                         model.name1 = model.name1 + phone + "\n"
                     }
                     
