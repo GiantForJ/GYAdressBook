@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B77D0E011D7FDEB800BF55B8 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B77D0E001D7FDEB800BF55B8 /* 1.png */; };
 		B7F8D2591D755751009EAB59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8D2581D755751009EAB59 /* AppDelegate.swift */; };
 		B7F8D25B1D755751009EAB59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8D25A1D755751009EAB59 /* ViewController.swift */; };
 		B7F8D25E1D755751009EAB59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F8D25C1D755751009EAB59 /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B77D0E001D7FDEB800BF55B8 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		B7F8D2551D755751009EAB59 /* GYAdressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYAdressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F8D2581D755751009EAB59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7F8D25A1D755751009EAB59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 		B7F8D2A61D7681D4009EAB59 /* GYContactsCustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				B77D0E001D7FDEB800BF55B8 /* 1.png */,
 				B7F8D2A71D7681D4009EAB59 /* AppDelegate.swift */,
 				B7F8D2A91D7681D4009EAB59 /* ViewController.swift */,
 				B7F8D4561D76C7EC009EAB59 /* GYConactBook.swift */,
@@ -447,6 +450,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B77D0E011D7FDEB800BF55B8 /* 1.png in Resources */,
 				B7F8D2B21D7681D4009EAB59 /* LaunchScreen.storyboard in Resources */,
 				B7F8D2AF1D7681D4009EAB59 /* Assets.xcassets in Resources */,
 				B7F8D2AD1D7681D4009EAB59 /* Main.storyboard in Resources */,

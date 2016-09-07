@@ -28,9 +28,11 @@ class GYTConactCell: UITableViewCell {
     func creatUI() {
         
         contentView.addSubview(nameLabel)
-        contentView.addSubview(nameLabel)
+        contentView.addSubview(phoneNumLabel)
         
+        nameLabel.frame = CGRect(x: 20, y: 5, width: ScreenWD - 40, height: 25)
         
+        phoneNumLabel.frame = CGRect(x: 20, y: 30, width: ScreenWD - 40, height: 25)
         
     }
     
@@ -38,7 +40,6 @@ class GYTConactCell: UITableViewCell {
         
         let nameLabel = UILabel()
         
-        nameLabel.frame = CGRect(x: 20, y: 5, width: ScreenHt - 40, height: 25)
         nameLabel.textColor = UIColor.blackColor()
         nameLabel.font = UIFont.systemFontOfSize(15)
         nameLabel.textAlignment = .Left
@@ -51,7 +52,7 @@ class GYTConactCell: UITableViewCell {
         
         let nameLabel = UILabel()
         
-        nameLabel.frame = CGRect(x: 20, y: 30, width: ScreenHt - 40, height: 25)
+        
         nameLabel.textColor = UIColor.blackColor()
         nameLabel.font = UIFont.systemFontOfSize(15)
         nameLabel.textAlignment = .Left
