@@ -27,6 +27,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var phoneNumLb: UILabel!
     
+    
+
     var phoneNum:[String] = []
     var phoneAdress:[String] = []
     var phoneNumLbValue:String = ""

@@ -199,7 +199,7 @@ class GYConactBook: NSObject {
             let sortArr:NSArray =  arrArr as! NSArray
             
             if Bool(sortArr.count) {
-                //不作处理
+                //不作处理 
                 
             } else {
                 //将空数组添加到temp中

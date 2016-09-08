@@ -23,18 +23,40 @@ class ViewController: UIViewController {
         }
     }
     
+    var filterCandies: NSMutableArray?
+    
     var tableView: UITableView?
+    
+    var allArr: NSMutableArray?
+    var searchBar: NSArray = []
+    
+    var allSet: NSMutableSet?
+    
+    
+    var searchController: UISearchController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         sectionTitles = NSMutableArray()
-        
+        allArr = NSMutableArray()
+        allSet = NSMutableSet()
         
         tableView = UITableView(frame: view.frame)
         
         tableView?.delegate = self
         tableView?.dataSource = self
+        
+        searchController = UISearchController(searchResultsController: nil)
+        searchController?.searchResultsUpdater = self
+        //取消暗化上一个view
+        self.searchController?.dimsBackgroundDuringPresentation = true
+        //        searchController?.searchBar.sizeToFit()
+        //设置definesPresentationContext为true，我们保证在UISearchController在激活状态下用户push到下一个view controller之后search bar不会仍留在界面上。
+        definesPresentationContext = true
+        //        //        searchBar = UISearchBar()
+        //        searchBar?.frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 44)
+        tableView?.tableHeaderView = searchController?.searchBar
         
         view.addSubview(tableView!)
         
@@ -43,28 +65,17 @@ class ViewController: UIViewController {
         let gyConact = GYConactBook()
         dataArr = gyConact.getAllPerson()
         setTileList()
-        dataArr?.enumerateObjectsUsingBlock { (arrArr, idx, stop) in
-            
-            let sortArr:NSArray =  arrArr as! NSArray
-            
-            //            if Bool(sortArr.count) {
-            let model = sortArr as? [GYPersonModel]
-            
-            //            print((model![0] as GYPersonModel).sectionNumber)
-        }
         
-        print(sectionTitles)
-        //        for var i = 0; i < dataArr?.count;i += 1 {
-        //            
-        //            let modelArr = dataArr![i] as! [GYPersonModel]
-        //            
-        //            for person: GYPersonModel in modelArr {
-        //                print(person.name1)
-        //                print(person.sectionNumber)
-        //                print(person.phoneNumber)
-        //            }
-        //            
-        //        }
+        for item in dataArr! {
+            
+            for subItem in item as! [GYPersonModel] {
+                
+                allArr?.addObject(subItem)
+                allSet?.addObject(subItem)
+                
+            }
+            
+        }
         
         
         
@@ -89,21 +100,21 @@ class ViewController: UIViewController {
             
             
         }
+        
+        
+        self.sectionTitles?.removeAllObjects()
+        self.sectionTitles = existtitles
+        
+    }
     
     
-    self.sectionTitles?.removeAllObjects()
-    self.sectionTitles = existtitles
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
-}
-
-
-override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-}
-
-
-
+    
+    
 }
 
 extension ViewController: UITableViewDelegate,UITableViewDataSource {
@@ -166,3 +177,33 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
     
 }
 
+extension ViewController: UISearchResultsUpdating {
+    
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        
+        print(searchController.searchBar.text)
+        
+        guard searchController.searchBar.text != "" else {
+            return
+        }
+        //        
+        //        let pred = NSPredicate.init(format:"SELF like %@",searchController.searchBar.text!)
+        //        
+        //        let resultArr = allArr?.filterUsingPredicate(pred)
+        
+        let pred = NSPredicate.init(format:"name1 CONTAINS %@",searchController.searchBar.text!)
+        
+//        let result = allSet?.filteredSetUsingPredicate(pred)
+        
+         let result = allArr?.filteredArrayUsingPredicate(pred) as! [GYPersonModel]
+        dataArr?.addObjectsFromArray(result)
+        
+        print(result)
+        
+    }
+    
+    
+    
+    
+    
+}
