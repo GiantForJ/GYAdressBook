@@ -35,16 +35,16 @@ class SearchDetailVcViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        let model = resultArr![indexPath.row]
-//        
-//        print(model.name1)
-//        
-//        let showVc = ShowViewController()
-//        
-//        showVc.hidesBottomBarWhenPushed = true
-//        
-//        navigationController?.pushViewController(showVc, animated: true)
-//      
+        let model = resultArr![indexPath.row]
+        
+        print(model.name1)
+        
+        let showVc = ShowViewController()
+
+        print(self.navigationController?.viewControllers)
+        self.navigationController?.pushViewController(showVc, animated: true)
+        
+//
         
     }
     

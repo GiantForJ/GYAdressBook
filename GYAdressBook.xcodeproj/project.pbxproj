@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B710C6411D824D0D00AF3E7F /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B710C6401D824D0D00AF3E7F /* ShowViewController.swift */; };
+		B710C6431D82693200AF3E7F /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B710C6421D82693200AF3E7F /* Reveal.framework */; };
+		B710C6441D82693200AF3E7F /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B710C6421D82693200AF3E7F /* Reveal.framework */; };
 		B77D0E011D7FDEB800BF55B8 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B77D0E001D7FDEB800BF55B8 /* 1.png */; };
 		B77D0E4E1D81115300BF55B8 /* SearchDetailVcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77D0E4D1D81115300BF55B8 /* SearchDetailVcViewController.swift */; };
 		B7F8D2591D755751009EAB59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8D2581D755751009EAB59 /* AppDelegate.swift */; };
@@ -64,6 +66,7 @@
 
 /* Begin PBXFileReference section */
 		B710C6401D824D0D00AF3E7F /* ShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
+		B710C6421D82693200AF3E7F /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		B77D0E001D7FDEB800BF55B8 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		B77D0E4D1D81115300BF55B8 /* SearchDetailVcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDetailVcViewController.swift; sourceTree = "<group>"; };
 		B7F8D2551D755751009EAB59 /* GYAdressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYAdressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B710C6431D82693200AF3E7F /* Reveal.framework in Frameworks */,
 				B7F8D28D1D7567C4009EAB59 /* AddressBookUI.framework in Frameworks */,
 				B7F8D28B1D7567B8009EAB59 /* AddressBook.framework in Frameworks */,
 			);
@@ -127,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B710C6441D82693200AF3E7F /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +231,7 @@
 		B7F8D2A61D7681D4009EAB59 /* GYContactsCustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				B710C6421D82693200AF3E7F /* Reveal.framework */,
 				B77D0E001D7FDEB800BF55B8 /* 1.png */,
 				B7F8D2A71D7681D4009EAB59 /* AppDelegate.swift */,
 				B7F8D2A91D7681D4009EAB59 /* ViewController.swift */,
@@ -684,6 +690,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GYContactsCustomUI",
+				);
 				INFOPLIST_FILE = GYAdressBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -697,6 +707,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GYContactsCustomUI",
+				);
 				INFOPLIST_FILE = GYAdressBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -756,10 +770,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GYContactsCustomUI",
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
+				);
 				INFOPLIST_FILE = GYContactsCustomUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.JadeFor.GYContactsCustomUI2;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
+				OTHER_LIBTOOLFLAGS = "-Objc -lz -framework Reveal";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JadeFor.GYContactsCustomU1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -769,10 +796,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GYContactsCustomUI",
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
+				);
 				INFOPLIST_FILE = GYContactsCustomUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.JadeFor.GYContactsCustomUI2;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JadeFor.GYContactsCustomU1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

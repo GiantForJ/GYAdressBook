@@ -13,13 +13,13 @@ class ViewController: UIViewController {
     
     var dataArr: NSMutableArray? {
         didSet{
-            tableView?.reloadData()
+//            tableView?.reloadData()
         }
     }
     
     var sectionTitles: NSMutableArray?{
         didSet {
-            tableView?.reloadData()
+//            tableView?.reloadData()
         }
     }
     
@@ -42,7 +42,19 @@ class ViewController: UIViewController {
         
         initUI()
         
-        initData()
+        weak var weakSelf = self
+        
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) { 
+            weakSelf?.initData()
+            
+            dispatch_async(dispatch_get_main_queue(), { 
+                
+                weakSelf?.tableView?.reloadData()
+                
+            })
+        }
+        
+        
         
         
         
@@ -171,14 +183,14 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        if tableView == self.tableView {
-            
-        } else {
-            let show = ShowViewController()
-            
-            navigationController?.pushViewController(show, animated: true)
-        }
-
+        //        if tableView == self.tableView {
+        //            
+        //        } else {
+        //            let show = ShowViewController()
+        //            
+        //            navigationController?.pushViewController(show, animated: true)
+        //        }
+        
     }
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
