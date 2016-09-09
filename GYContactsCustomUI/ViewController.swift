@@ -35,19 +35,33 @@ class ViewController: UIViewController {
     
     var searchController: UISearchController?
     
+    var resultVC: SearchDetailVcViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        sectionTitles = NSMutableArray()
-        allArr = NSMutableArray()
-        allSet = NSMutableSet()
+        initUI()
+        
+        initData()
+        
+        
+        
+    }
+    
+    func initUI() {
+        
         
         tableView = UITableView(frame: view.frame)
         
         tableView?.delegate = self
         tableView?.dataSource = self
+        resultVC = SearchDetailVcViewController()
+        let nav1 =  UINavigationController.init(rootViewController: resultVC!)
+        nav1.navigationBarHidden = true
+        tableView?.estimatedRowHeight = 60
         
-        searchController = UISearchController(searchResultsController: nil)
+        
+        searchController = UISearchController(searchResultsController: nav1)
         searchController?.searchResultsUpdater = self
         //取消暗化上一个view
         self.searchController?.dimsBackgroundDuringPresentation = true
@@ -61,6 +75,15 @@ class ViewController: UIViewController {
         view.addSubview(tableView!)
         
         tableView?.registerClass(GYTConactCell.self, forCellReuseIdentifier: "cellID")
+    }
+    
+    
+    func initData() {
+        
+        sectionTitles = NSMutableArray()
+        allArr = NSMutableArray()
+        allSet = NSMutableSet()
+        
         
         let gyConact = GYConactBook()
         dataArr = gyConact.getAllPerson()
@@ -76,10 +99,8 @@ class ViewController: UIViewController {
             }
             
         }
-        
-        
-        
     }
+    
     
     func setTileList() {
         let theCollation = UILocalizedIndexedCollation.currentCollation()
@@ -148,6 +169,18 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
         return 60
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if tableView == self.tableView {
+            
+        } else {
+            let show = ShowViewController()
+            
+            navigationController?.pushViewController(show, animated: true)
+        }
+
+    }
+    
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         if self.sectionTitles == nil || self.sectionTitles?.count == 0 {
@@ -186,21 +219,19 @@ extension ViewController: UISearchResultsUpdating {
         guard searchController.searchBar.text != "" else {
             return
         }
-        //        
-        //        let pred = NSPredicate.init(format:"SELF like %@",searchController.searchBar.text!)
-        //        
-        //        let resultArr = allArr?.filterUsingPredicate(pred)
         
+        //谓词
         let pred = NSPredicate.init(format:"name1 CONTAINS %@",searchController.searchBar.text!)
         
-//        let result = allSet?.filteredSetUsingPredicate(pred)
-        
-         let result = allArr?.filteredArrayUsingPredicate(pred) as! [GYPersonModel]
+        let result = allArr?.filteredArrayUsingPredicate(pred) as! [GYPersonModel]
         dataArr?.addObjectsFromArray(result)
+        
+        resultVC?.resultArr = result
         
         print(result)
         
     }
+    
     
     
     

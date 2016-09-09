@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B710C6411D824D0D00AF3E7F /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B710C6401D824D0D00AF3E7F /* ShowViewController.swift */; };
 		B77D0E011D7FDEB800BF55B8 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B77D0E001D7FDEB800BF55B8 /* 1.png */; };
 		B77D0E4E1D81115300BF55B8 /* SearchDetailVcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77D0E4D1D81115300BF55B8 /* SearchDetailVcViewController.swift */; };
 		B7F8D2591D755751009EAB59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8D2581D755751009EAB59 /* AppDelegate.swift */; };
@@ -62,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B710C6401D824D0D00AF3E7F /* ShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
 		B77D0E001D7FDEB800BF55B8 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		B77D0E4D1D81115300BF55B8 /* SearchDetailVcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDetailVcViewController.swift; sourceTree = "<group>"; };
 		B7F8D2551D755751009EAB59 /* GYAdressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYAdressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -230,6 +232,7 @@
 				B7F8D4561D76C7EC009EAB59 /* GYConactBook.swift */,
 				B7F8D4581D7958B3009EAB59 /* GYTConactCell.swift */,
 				B77D0E4D1D81115300BF55B8 /* SearchDetailVcViewController.swift */,
+				B710C6401D824D0D00AF3E7F /* ShowViewController.swift */,
 				B7F8D2AB1D7681D4009EAB59 /* Main.storyboard */,
 				B7F8D2AE1D7681D4009EAB59 /* Assets.xcassets */,
 				B7F8D2B01D7681D4009EAB59 /* LaunchScreen.storyboard */,
@@ -512,6 +515,7 @@
 				B7F8D2A81D7681D4009EAB59 /* AppDelegate.swift in Sources */,
 				B7F8D4591D7958B3009EAB59 /* GYTConactCell.swift in Sources */,
 				B7F8D4571D76C7EC009EAB59 /* GYConactBook.swift in Sources */,
+				B710C6411D824D0D00AF3E7F /* ShowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

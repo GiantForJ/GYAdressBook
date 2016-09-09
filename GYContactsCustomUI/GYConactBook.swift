@@ -121,7 +121,7 @@ class GYConactBook: NSObject {
                         let phone = value.takeRetainedValue() as! String
                         
                         
-                        model.phoneNumber = model.phoneNumber + phone 
+                        model.phoneNumber = phone  + "\n" + model.phoneNumber
                     }
                     
                 }

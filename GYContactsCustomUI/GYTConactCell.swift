@@ -71,6 +71,7 @@ class GYTConactCell: UITableViewCell {
     //Xib
     override func awakeFromNib() {
         super.awakeFromNib()
+        creatUI()
     }
     required init?(coder aDecoder: NSCoder) {
         
